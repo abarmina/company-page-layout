@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    background-color: $content-bg-color;
+    &__main {
+        flex-grow: 1;
+    }
+}
