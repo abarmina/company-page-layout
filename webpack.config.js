@@ -36,5 +36,10 @@ module.exports = {
             template: 'src/index.pug',
         }),
         new HtmlWebpackPugPlugin()
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 9000
+    },
 };
