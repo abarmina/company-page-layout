@@ -2,23 +2,23 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
-const extractSass = new ExtractTextPlugin({
-    filename: 'style.css',
-});
-  
 
 module.exports = {
     mode: 'production',
     entry: './src/app.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js'
     },
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract(
+                {
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                })
             },
             {
                 test: /\.pug$/,
@@ -30,7 +30,9 @@ module.exports = {
         ]
     },
     plugins: [
-        extractSass,
+        new ExtractTextPlugin(
+            {filename: 'style.css'}
+        ),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.pug',
@@ -40,6 +42,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
+        hot: true,
         port: 9000
     },
 };
