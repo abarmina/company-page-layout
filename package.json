@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "start": "webpack --watch"
   },
   "repository": {
@@ -19,6 +19,20 @@
   },
   "homepage": "https://github.com/abarmina/company-page-layout#readme",
   "devDependencies": {
-    "webpack": "^4.43.0"
+    "css-loader": "^3.6.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-webpack-pug-plugin": "^2.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.4.0",
+    "raw-loader": "^4.0.1",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   }
 }
