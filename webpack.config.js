@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 module.exports = {
-    mode: 'production',
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -39,10 +38,9 @@ module.exports = {
         }),
         new HtmlWebpackPugPlugin()
     ],
-    devServer: {
-        contentBase: path.join(__dirname, "dist"),
-        compress: true,
-        hot: true,
-        port: 9000
-    },
+    // devServer: {
+    //     contentBase: path.join(__dirname, "dist"),
+    //     compress: true,
+    //     hot: true
+    // },
 };
