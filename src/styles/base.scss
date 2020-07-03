@@ -1,14 +1,13 @@
 @import './variables.scss';
 
-$color: pink;
-
-html, body {
-    height: 100vh;
-}
-
 body {
     min-width: 1366px;
-    background-color: $color;
+    min-height: 768px;
+    background-color: $content-bg-color;
     margin: 0;
     font-family: $font-family;
+}
+
+*{
+    box-sizing: border-box;
 }
