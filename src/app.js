@@ -5,3 +5,8 @@ import './styles/content.scss';
 import './styles/menu.scss';
 import './styles/nav.scss'
 import './styles/variables.scss'
+import './styles/header.scss'
+import './styles/footer.scss'
+import './styles/help.scss'
+import './styles/button.scss'
+import './styles/deletion.scss'
