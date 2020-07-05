@@ -2,11 +2,13 @@
     .content__block-separator
         .content__category
             .content__title Перспективные захоронения
-            .content__icon--edit
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
     .content__block-separator
         .content__category
             .content__subtitle ОБЩАЯ ИНФОРМАЦИЯ
-            .content__icon--edit
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
         .content__table
             .content__column 
                 .content__th Полное название:
@@ -21,7 +23,8 @@
     .content__block-separator
         .content__category
             .content__subtitle КОНТАКТНЫЕ ДАННЫЕ
-            .content__icon--edit
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
         .content__table
             .content__column 
                 .content__th ФИО:
@@ -34,7 +37,8 @@
     .content__block-separator
         .content__category
             .content__subtitle АДРЕСА И ТЕЛЕФОНЫ
-            .content__icon--edit
+            .div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
         .content__table
             .content__column 
                 .content__th Юр. адрес:
@@ -49,7 +53,8 @@
     .content__block-separator
         .content__category
             .content__subtitle РЕКВИЗИТЫ ОРГАНИЗАЦИИ
-            .content__icon--edit
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
         .content__table
             .content__column 
                 .content__th БИК:
@@ -72,18 +77,22 @@
     .content__block-separator
         .content__category.mb-2
             .content__subtitle ПРИЛОЖЕННЫЕ ФАЙЛЫ
-            .content__icon--edit
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-edit.svg")
         .content__category.mb-1
             .content__file Договор ЗН 1234-4567.pdf
                 .content__description Файл PDF, 1.2 МБ
-            .content__icon--cancel
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-cancel.svg")
         .content__category.mb-1
             .content__file.content__file--uncertain Фотографии счета на оплату
                 .content__description Файл PDF, 1.2 МБ
-            .content__icon--cancel
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-cancel.svg")
         .content__category
             .content__file.content__file--uncertain Документы за декабрь.zip
                 .content__description Файл PDF, 1.2 МБ
-            .content__icon--cancel
+            div.content__icon
+                input(type="image" name="edit" src="src/images/icon-cancel.svg")
         div.content__button
-            button.button ДОБАВИТЬ ФАЙЛ
+            input.button(type="submit" name="add" value="ДОБАВИТЬ ФАЙЛ")
