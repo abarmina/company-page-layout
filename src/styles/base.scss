@@ -2,13 +2,14 @@
 
 body {
     min-width: 1366px;
-    min-height: 768px;
+    height: 100%;
     background-color: $content-bg-color;
     margin: 0;
     font-family: $font-family;
     font-size: $font-size-n;
     font-weight: $font-weight-n;
     font-style: normal;
+    color: $text-color;
 }
 
 *{
