@@ -1,13 +1,13 @@
-div.menu 
-    div.menu__nav
-        div.menu__pages
+.menu 
+    .menu__nav
+        .menu__pages
             a.menu__link
                 include ../images/nav-icon-home.svg
             a.menu__link
                 include ../images/nav-icon-order.svg
             a.menu__link
                 include ../images/nav-icon-safety.svg
-            a.menu__link
+            a.menu__link.menu__link--active
                 include ../images/nav-icon-catalog.svg
             a.menu__link
                 include ../images/nav-icon-administration.svg
@@ -15,12 +15,19 @@ div.menu
                 include ../images/nav-icon-agent-service.svg
             a.menu__link
                 include ../images/nav-icon-search.svg
-        div.menu__personal
+        .menu__personal
             a.menu__link
                 include ../images/nav-icon-chat.svg
             a.menu__link
                 include ../images/nav-icon-contactors.svg
             a.menu__link
                 include ../images/nav-icon-exit-hover.svg
-    div.menu__base 
-        div
+    .menu__base
+        .menu__title ЧЕСТНЫЙ АГЕНТ
+        .menu__subtitle МЕНЕДЖЕР ПРОЦЕССА
+        .menu__item 
+            .menu__separator
+            .menu__icon 
+                include ../images/icon-building.svg
+            .menu__text Организации
+        

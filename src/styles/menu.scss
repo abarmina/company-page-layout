@@ -1,10 +1,11 @@
 @import './variables.scss';
 
 .menu {
-    flex-grow: 1;
     display: flex;
+    position: relative;
+    min-width: 272px;
     &__nav {
-        min-width: 48px;        
+        min-width: 48px;      
         background: $main-nav-color;
         display: flex;
         flex-direction: column;
@@ -15,10 +16,17 @@
     &__link {
         display: block;
         cursor: pointer;
-        padding: 0;
-        margin-top: 40px;
-        &:first-child {
-            margin-top: 0;
+        text-decoration: none;
+        padding: 18px 14px;
+        &:first-child
+        {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+        &--active {
+            background-color: $main-nav-color-active;
         }
     }
     &__personal {
@@ -38,5 +46,52 @@
     &__base {
         width: 100%;
         background: $main-color;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 21px;
+            height: 100%;
+            left: 251px;
+            top: 0px;
+            background: linear-gradient(90deg, $gradient-color-one 0%, $gradient-color-two 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+    &__title {
+        line-height: $line-height-b;
+        font-weight: $font-weight-b;
+        margin-top: 13px;
+    }
+    &__subtitle {
+        line-height: $line-height-l;
+        font-size: $font-size-s;
+        margin-top: 2px;
+    }
+    &__title,
+    &__subtitle {
+        color: $title-color;
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        justify-content: start;
+        position: absolute;
+        top:72px;
+        left: 48px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        max-width: 224px;
+        padding: 0;
+        color: $item-color;
+        background-color: $main-cell-color;
+    }
+    &__separator {
+        width: 4px;
+        height: 44px;
+        background-color: $item-color;
+    }
+    &__icon {
+        padding: 0 12px;
     }
 }
