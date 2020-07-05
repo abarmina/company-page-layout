@@ -41,6 +41,7 @@
         margin-right: 16px;
     }
     &__icon{
+        font-size: 0;
         &--edit {
             background-image: url("/src/images/icon-edit.svg");
             width: 18px;
@@ -48,8 +49,8 @@
         }
         &--cancel {
             background-image: url("/src/images/icon-cancel.svg");
-            width: 11px;
-            height: 11px;
+            width: 15px;
+            height: 15px;
             align-self: flex-start;
             margin-left: 9px;
         }
