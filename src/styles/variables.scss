@@ -1,6 +1,8 @@
 // color
 $content-bg-color: #FFFFFF;
 $main-nav-color: #82B284;
+$item-color: #82B284;
+$main-nav-color-active: #A4C7A5;
 $separator-bg-color: #A4C7A5;
 $main-color: #F7F7F7;
 $main-cell-color: #EEEEEE;
@@ -8,6 +10,23 @@ $text-color: #3B3B3B;
 $file-text-color: #343434;
 $btn-text-color: #FFFFFF;
 $btn-text-color-cancel: #B9B9B9;
+$title-color: #42425D;
+$gradient-color-one: rgba(0, 0, 0, 0.072);
+$gradient-color-two: rgba(255, 255, 255, 0);
 
 // font
 $font-family: 'Proxima Nova', sans-serif;
+$font-size-b: 24px;
+$font-size-m: 18px;
+$font-size-n: 16px;
+$font-size-l: 14px;
+$font-size-s: 12px;
+$line-height-h: 30px;
+$line-height-b: 26px;
+$line-height-m: 24px;
+$line-height-n: 20px;
+$line-height-l: 19px;
+$line-height-s: 18px;
+$font-weight-b: 600;
+$font-weight-n: 400;
+$font-weight-l: 300;
