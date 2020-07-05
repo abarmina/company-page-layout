@@ -46,13 +46,13 @@
         padding: 0;
         color: $item-color;
         background-color: $main-cell-color;
+        & svg {
+            margin: 0 12px;
+        }
     }
     &__separator {
         width: 4px;
         height: 44px;
         background-color: $item-color;
-    }
-    &__icon {
-        padding: 0 12px;
     }
 }
