@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+.nav {
+    min-width: 48px;      
+    background: $main-nav-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    &__link {
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 20px 14px;
+        font-size: 0;
+        &:first-child
+        {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+        &--active {
+            background-color: $main-nav-color-active;
+        }
+    }
+    &__personal {
+        margin-top: 210px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 32px;
+            height: 1px;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);        
+            background-color: $separator-nav-color;
+        }
+    }
+}
