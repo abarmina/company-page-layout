@@ -40,20 +40,9 @@
         line-height: $line-height-m;
         margin-right: 16px;
     }
-    &__icon{
+    &__icon {
         font-size: 0;
-        &--edit {
-            background-image: url("/src/images/icon-edit.svg");
-            width: 18px;
-            height: 20px;
-        }
-        &--cancel {
-            background-image: url("/src/images/icon-cancel.svg");
-            width: 15px;
-            height: 15px;
-            align-self: flex-start;
-            margin-left: 9px;
-        }
+        align-self: start;
     }
     &__table {
         display: flex;
@@ -83,6 +72,7 @@
     &__file {
         position: relative;
         padding-left: 35px;
+        margin-right: 9px;
         font-size: $font-size-s;
         max-width: 185px;
         color: $file-text-color;
@@ -108,5 +98,18 @@
     }
     &__button {
         margin-top: 32px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: url("/src/images/icon-add.svg");
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
