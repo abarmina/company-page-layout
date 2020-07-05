@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.button {
+    position: relative;
+    padding: 12px 16px 12px 46px;
+    background-color: $btn-bg-color;
+    border: none;
+    font-size: $font-size-l;
+    line-height: $line-height-nm;
+    color: $btn-text-color;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 16px;
+        width: 20px;
+        height: 20px;
+        background-image: url("/src/images/icon-add.svg");
+    }
+}
