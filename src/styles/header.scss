@@ -18,6 +18,8 @@
     &__control {
         font-size: 0;
         & svg {
+            width: 24px;
+            height: 24px;
             margin-left: 25px;
             &:first-child {
                 margin: 0;
