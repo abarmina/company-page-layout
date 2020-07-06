@@ -29,15 +29,15 @@
         align-items: flex-start;
     }
     &__title {
-        font-size: $font-size-b;
-        line-height: $line-height-h;
+        font-size: $font-size-1;
+        line-height: $line-height-1;
         color: $content-title-color;
         margin-right: 12px;
     }
     &__subtitle {
-        font-size: $font-size-m;
-        font-weight: $font-weight-l;
-        line-height: $line-height-m;
+        font-size: $font-size-3;
+        font-weight: $font-light;
+        line-height: $line-height-4;
         margin-right: 16px;
     }
     &__icon {
@@ -75,10 +75,10 @@
         position: relative;
         padding-left: 35px;
         margin-right: 9px;
-        font-size: $font-size-s;
+        font-size: $font-size-6;
         max-width: 185px;
         color: $file-text-color;
-        font-size: $font-size-s;
+        font-size: $font-size-6;
         &::before {
             position: absolute;
             content: "";
