@@ -26,7 +26,7 @@
     &__category {
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     &__title {
         font-size: $font-size-b;
@@ -42,7 +42,9 @@
     }
     &__icon {
         font-size: 0;
-        align-self: start;
+        &--center {
+            align-self: center;
+        }
     }
     &__table {
         display: flex;
