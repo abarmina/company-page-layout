@@ -2,30 +2,29 @@
 
 .menu {
     display: flex;
-    position: relative;
-    min-width: 272px;
     &__base {
-        width: 100%;
+        position: relative;
+        min-width: 224px;
         background: $main-color;
         &:after {
             position: absolute;
             content: "";
             width: 21px;
             height: 100%;
-            left: 251px;
+            right: 0;
             top: 0px;
             background: linear-gradient(90deg, $gradient-color-one 0%, $gradient-color-two 100%);
             transform: matrix(-1, 0, 0, 1, 0, 0);
         }
     }
     &__title {
-        line-height: $line-height-b;
-        font-weight: $font-weight-b;
+        line-height: $line-height-3;
+        font-weight: $font-bold;
         margin-top: 13px;
     }
     &__subtitle {
-        line-height: $line-height-l;
-        font-size: $font-size-s;
+        line-height: $line-height-7;
+        font-size: $font-size-6;
         margin-top: 2px;
     }
     &__title,
@@ -37,12 +36,10 @@
         display: flex;
         justify-content: start;
         position: absolute;
-        top:72px;
-        left: 48px;
-        display: flex;
-        justify-content: start;
+        top: 72px;
+        left: 0;
         align-items: center;
-        max-width: 224px;
+        width: 100%;
         padding: 0;
         color: $item-color;
         background-color: $main-cell-color;
