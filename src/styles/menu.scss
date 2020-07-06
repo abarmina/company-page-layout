@@ -3,9 +3,8 @@
 .menu {
     display: flex;
     position: relative;
-    min-width: 272px;
     &__base {
-        width: 100%;
+        min-width: 224px;
         background: $main-color;
         &:after {
             position: absolute;
@@ -39,10 +38,8 @@
         position: absolute;
         top:72px;
         left: 48px;
-        display: flex;
-        justify-content: start;
         align-items: center;
-        max-width: 224px;
+        width: 100%;
         padding: 0;
         color: $item-color;
         background-color: $main-cell-color;
