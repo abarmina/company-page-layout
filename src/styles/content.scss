@@ -4,13 +4,13 @@
     width: 100%;
     overflow-y: auto;
     background-color: $content-bg-color;
+    padding: 0 40px;
     &__main {
         flex-grow: 1;
     }
     &__block-separator {
         position: relative;
         padding: 28px 0;
-        margin: 0 40px;
         border-bottom: 1px solid $separator-color;
     }
     &__category {
