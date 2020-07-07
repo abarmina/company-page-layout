@@ -5,9 +5,11 @@
     flex-grow: 1;
     overflow-y: auto;
     background-color: $content-bg-color;
+    padding-top: 72px;
+    
     &__main {
         flex-grow: 1;
-        margin: 72px 40px 0 40px;
+        margin: 0 40px;
     }
 
     &__block-separator {
