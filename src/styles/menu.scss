@@ -1,5 +1,6 @@
 .menu {
     display: flex;
+
     &__base {
         position: relative;
         min-width: 224px;
@@ -15,21 +16,25 @@
             transform: matrix(-1, 0, 0, 1, 0, 0);
         }
     }
+
     &__title {
         line-height: $line-height-3;
         font-weight: $font-bold;
         margin-top: 13px;
     }
+
     &__subtitle {
         line-height: $line-height-7;
         font-size: $font-size-6;
         margin-top: 2px;
     }
+
     &__title,
     &__subtitle {
         color: $title-color;
         text-align: center;
     }
+
     &__item {
         display: flex;
         justify-content: start;
@@ -45,6 +50,7 @@
             margin: 0 12px;
         }
     }
+    
     &__separator {
         width: 4px;
         height: 44px;
