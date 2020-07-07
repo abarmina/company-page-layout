@@ -1,11 +1,11 @@
-let popup = document.querySelector('.popup'),
-    popupToggle = document.querySelector('.header__button--delete'),
-    popupCancel = document.querySelector('.popup__answer--cancel');
+const popup = document.getElementById('j-popup'),
+    popupDeleteButton = document.getElementById('j-delete-button'),
+    popupCancelButton = document.getElementById('j-cancel-button');
 
-popupToggle.onclick = function() {
-    popup.classList.add('popup--active');
-}
+popupDeleteButton.addEventListener('click', () => {
+    popup.classList.add('j-active');
+});
 
-popupCancel.onclick = function() {
-    popup.classList.remove('popup--active');
-}
+popupCancelButton.addEventListener('click', () => {
+    popup.classList.remove('j-active');
+})

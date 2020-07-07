@@ -8,12 +8,6 @@
     top: 0;
     left: 0;
     z-index: 10;
-    &--active {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-    }
     &__content {
         max-width: 320px;
         z-index: 20;
@@ -53,4 +47,11 @@
             color: $btn-text-color-delete;
         }
     }
+}
+
+.j-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
 }

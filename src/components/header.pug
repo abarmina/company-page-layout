@@ -2,11 +2,11 @@
     .header__nav
         include ../images/icon-arrow.svg
         .header__title К СПИСКУ ЮРИДИЧЕСКИХ ЛИЦ
-    .header__control 
+    .header__control
         div.header__button
             input(type="image" name="chain" src="images/icon-chain.svg")
         div.header__button
             input(type="image" name="history" src="images/icon-history.svg")
         include ./popup.pug
         div.header__button.header__button--delete
-            input(type="image" name="delete" src="images/icon-delete.svg")
+            input#j-delete-button(type="image" name="delete" src="images/icon-delete.svg")
