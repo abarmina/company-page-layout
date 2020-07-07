@@ -1,13 +1,19 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 8080
     },
     module: {
         rules: [
@@ -25,17 +31,36 @@ module.exports = {
                     "raw-loader",
                     "pug-html-loader"
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192
+                        },
+                    },
+                ],
+            },
         ]
     },
     plugins: [
         new ExtractTextPlugin(
             {filename: 'style.css'}
         ),
+
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.pug',
         }),
-        new HtmlWebpackPugPlugin()
+
+        new HtmlWebpackPugPlugin(),
+
+        new CopyPlugin({
+            patterns: [
+              { from: 'src/images', to: 'images' },
+            ],
+          }),
     ],
 };

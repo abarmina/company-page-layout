@@ -1,8 +1,9 @@
-@import './variables.scss';
+html, body {
+    height: 100vh;
+}
 
 body {
     min-width: 1366px;
-    height: 100%;
     background-color: $content-bg-color;
     margin: 0;
     font-family: $font-family;
@@ -14,4 +15,5 @@ body {
 
 *{
     box-sizing: border-box;
+    outline: none;
 }

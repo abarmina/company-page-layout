@@ -1,7 +1,6 @@
-@import './variables.scss';
-
 .menu {
     display: flex;
+
     &__base {
         position: relative;
         min-width: 224px;
@@ -47,6 +46,7 @@
             margin: 0 12px;
         }
     }
+    
     &__separator {
         width: 4px;
         height: 44px;
