@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -37,10 +38,18 @@ module.exports = {
         new ExtractTextPlugin(
             {filename: 'style.css'}
         ),
+
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.pug',
         }),
-        new HtmlWebpackPugPlugin()
+
+        new HtmlWebpackPugPlugin(),
+
+        new CopyPlugin({
+            patterns: [
+              { from: 'src/images', to: 'images' },
+            ],
+          }),
     ],
 };

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/abarmina/company-page-layout#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-loader": "^1.1.0",
