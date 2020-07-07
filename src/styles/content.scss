@@ -1,12 +1,11 @@
 .content {
+    min-width: 1094px;
     display: flex;
     flex-direction: column;
-    width: 1094px;
+    flex-grow: 1;
     overflow-y: auto;
     background-color: $content-bg-color;
-
     &__main {
-        margin-top: 72px;
         flex-grow: 1;
         margin: 72px 40px 0 40px;
     }
@@ -90,11 +89,11 @@
             left: 0;
             width: 25px;
             height: 28px;
-            background-image: url("/images/icon-text-file.svg");
+            background-image: url("/dist/images/icon-text-file.svg");
         }
         &--uncertain {
             &::before {
-                background-image: url("/images/icon-common-file.svg");
+                background-image: url("/dist/images/icon-common-file.svg");
             }
         }
     }
@@ -103,13 +102,13 @@
         color: $file-description-color;
         margin-top: 4px;
     }
-    
+
     &__button {
         margin-top: 32px;
         position: relative;
         &::before {
             position: absolute;
-            content: url("/images/icon-add.svg");
+            content: url("/dist/images/icon-add.svg");
             left: 16px;
             top: 50%;
             transform: translateY(-50%);
