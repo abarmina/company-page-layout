@@ -9,71 +9,82 @@
             .content__subtitle ОБЩАЯ ИНФОРМАЦИЯ
             div.content__icon
                 input(type="image" name="edit" src="images/icon-edit.svg")
-        .content__table
-            .content__column 
-                .content__th Полное название:
-                .content__th Договор:
-                .content__th Форма:
-                .content__th Тип:
-            .content__column 
-                .content__tr ООО Фирма “Перспективные захоронения”
-                .content__tr 12345 от 12.03.2015, расторгнут 20.05.2017
-                .content__tr ООО
-                .content__tr Агент, Подрядчик
+        table.table.mt-1
+            tr
+                th.table__header Полное название:
+                td.table__data-cell ООО Фирма “Перспективные захоронения”
+            tr
+                th.table__header Договор:
+                td.table__data-cell 2345 от 12.03.2015, расторгнут 20.05.2017
+            tr
+                th.table__header Форма:
+                td.table__data-cell ООО
+            tr
+                th.table__header Тип:
+                td.table__data-cell Агент, Подрядчик
     .content__block-separator
         .content__category
             .content__subtitle КОНТАКТНЫЕ ДАННЫЕ
             div.content__icon
                 input(type="image" name="edit" src="images/icon-edit.svg")
-        .content__table
-            .content__column 
-                .content__th ФИО:
-                .content__th Телефон:
-                .content__th Эл. почта:
-            .content__column 
-                .content__tr Григорьев Сергей Петрович
-                .content__tr +7 (916) 216-55-88
-                a.content__link.content__tr grigoriev@funeral.com
+        table.table.mt-1
+            tr
+                th.table__header ФИО:
+                td.table__data-cell Григорьев Сергей Петрович
+            tr
+                th.table__header Телефон:
+                td.table__data-cell +7 (916) 216-55-88
+            tr
+                th.table__header Эл. почта:
+                td.table__data-cell.table__link grigoriev@funeral.com
     .content__block-separator
         .content__category
             .content__subtitle АДРЕСА И ТЕЛЕФОНЫ
             .div.content__icon
                 input(type="image" name="edit" src="images/icon-edit.svg")
-        .content__table
-            .content__column 
-                .content__th Юр. адрес:
-                .content__th Юр. телефон:
-                .content__th Фактич. адрес:
-                .content__th Телефон:
-            .content__column 
-                .content__tr 105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312
-                .content__tr +7 (495) 345-55-88
-                .content__tr 105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312
-                .content__tr +7 (916) 216-55-88
+        table.table.mt-1
+            tr
+                th.table__header Юр. адрес:
+                td.table__data-cell 105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312
+            tr
+                th.table__header Юр. телефон:
+                td.table__data-cell +7 (495) 345-55-88
+            tr
+                th.table__header Фактич. адрес:
+                td.table__data-cell 105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312
+            tr
+                th.table__header Телефон:
+                td.table__data-cell +7 (916) 216-55-88
     .content__block-separator
         .content__category
             .content__subtitle РЕКВИЗИТЫ ОРГАНИЗАЦИИ
             div.content__icon
                 input(type="image" name="edit" src="images/icon-edit.svg")
-        .content__table
-            .content__column 
-                .content__th БИК:
-                .content__th Банк:
-                .content__th Р/С:
-                .content__th К/С:
-                .content__th ИНН:
-                .content__th КПП:
-                .content__th ОГРН:
-                .content__th Ген. директор:
-            .content__column 
-                .content__tr 044525225
-                .content__tr ПАО СБЕРБАНК
-                .content__tr 4070 2810 0000 9000 1425
-                .content__tr 3010 1810 5403 0000 0795 БИК 044 030 795
-                .content__tr 1001254535
-                .content__tr 773101001
-                .content__tr 1053600591197
-                .content__tr Степаненко Игорь Яковлевич
+        table.table.mt-1
+            tr
+                th.table__header БИК:
+                td.table__data-cell 044525225
+            tr
+                th.table__header Банк:
+                td.table__data-cell ПАО СБЕРБАНК
+            tr
+                th.table__header Р/С:
+                td.table__data-cell 4070 2810 0000 9000 1425
+            tr
+                th.table__header К/С:
+                td.table__data-cell 3010 1810 5403 0000 0795 БИК 044 030 795
+            tr
+                th.table__header ИНН:
+                td.table__data-cell 1001254535
+            tr
+                th.table__header КПП:
+                td.table__data-cell 773101001
+            tr
+                th.table__header ОГРН:
+                td.table__data-cell 1053600591197
+            tr
+                th.table__header Ген. директор:
+                td.table__data-cell Степаненко Игорь Яковлевич
     .content__block-separator
         .content__category.mb-2
             .content__subtitle ПРИЛОЖЕННЫЕ ФАЙЛЫ

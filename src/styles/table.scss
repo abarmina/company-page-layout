@@ -1,0 +1,26 @@
+.table {
+    &__header {
+        font-weight: $font-normal;
+        color: $th-color;
+        min-width: 162px;
+        padding-right: 12px;
+        text-align: left;
+        vertical-align: text-bottom;
+    }
+
+    &__data-cell {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__header,
+    &__data-cell {
+        padding: 0;
+        padding-top: 12px;
+    }
+
+    &__link {
+        color: $item-color;
+    }
+}
