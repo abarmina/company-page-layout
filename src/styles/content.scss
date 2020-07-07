@@ -1,5 +1,3 @@
-@import './variables.scss';
-
 .content {
     display: flex;
     flex-direction: column;
@@ -86,11 +84,11 @@
             left: 0;
             width: 25px;
             height: 28px;
-            background-image: url("/src/images/icon-text-file.svg");
+            background-image: url("/images/icon-text-file.svg");
         }
         &--uncertain {
             &::before {
-                background-image: url("/src/images/icon-common-file.svg");
+                background-image: url("/images/icon-common-file.svg");
             }
         }
     }
@@ -103,7 +101,7 @@
         position: relative;
         &::before {
             position: absolute;
-            content: url("/src/images/icon-add.svg");
+            content: url("/images/icon-add.svg");
             left: 16px;
             top: 50%;
             transform: translateY(-50%);
