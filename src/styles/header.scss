@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     display: flex;
-    min-width: inherit;
+    min-width: calc(100% - 272px);
     height: 72px;
     top: 0;
     justify-content: space-between;
